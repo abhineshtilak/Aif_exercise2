@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mental Health Self-Check Form</title>
+</head>
+<body>
+
+    <marquee behavior="scroll" direction="left"><b>Mental Health Awareness: Take a moment to reflect on how you're feeling today</b></marquee>
+
+    <h2><u>Mental Health Self-Check Form</u></h2>
+
+    <!-- Basic Details Section -->
+    <fieldset>
+        <legend><b>Basic Details</b></legend>
+        
+        <label for="name"><b>Name:</b></label><br>
+        <input type="text" id="name" name="name"><br><br>
+        
+        <label for="age"><b>Age:</b></label><br>
+        <input type="number" id="age" name="age"><br><br>
+
+        <label for="gender"><b>Gender:</b></label><br>
+        <input type="radio" id="male" name="gender" value="Male"> Male<br>
+        <input type="radio" id="female" name="gender" value="Female"> Female<br>
+        <input type="radio" id="other" name="gender" value="Other"> Other<br><br>
+
+        <label for="email"><b>Email:</b></label><br>
+        <input type="email" id="email" name="email"><br><br>
+    </fieldset>
+
+    <br><hr><br>
+
+    <!-- Mental Health Questionnaire -->
+    <fieldset>
+        <legend><b>Mental Health Questionnaire</b></legend>
+
+        <p><b>1. How often do you feel stressed or overwhelmed?</b></p>
+        <input type="radio" name="stress" value="Often"> Often<br>
+        <input type="radio" name="stress" value="Sometimes"> Sometimes<br>
+        <input type="radio" name="stress" value="Rarely"> Rarely<br><br>
+
+        <p><b>2. Do you find it difficult to sleep or feel rested?</b></p>
+        <input type="checkbox" name="sleep" value="Yes"> Yes<br>
+        <input type="checkbox" name="sleep" value="No"> No<br><br>
+
+        <p><b>3. How would you describe your current emotional state?</b></p>
+        <textarea name="emotional_state" rows="4" cols="50" placeholder="Write your thoughts here..."></textarea><br><br>
+
+        <p><b>4. Are you able to focus on daily tasks?</b></p>
+        <input type="radio" name="focus" value="Yes"> Yes<br>
+        <input type="radio" name="focus" value="No"> No<br>
+        <input type="radio" name="focus" value="Sometimes"> Sometimes<br><br>
+
+        <p><b>5. What are some activities that help you feel better?</b></p>
+        <textarea name="activities" rows="4" cols="50" placeholder="List any helpful activities..."></textarea><br><br>
+
+        <p><i>Note: This form is for self-reflection only and not a substitute for professional advice.</i></p>
+    </fieldset>
+
+    <br>
+    <input type="submit" value="Submit">
+    
+</body>
+</html>
